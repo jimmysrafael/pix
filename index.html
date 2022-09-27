@@ -1,0 +1,52 @@
+<header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <style>
+            body {
+      background: pink;
+      color: white;
+    }
+    p {
+      font-size: 50px;
+      font-weight: bold;
+    }
+    button {
+      background: red;
+      color: white;
+      width: 150px;
+      height: 50px;
+      position: absolute;
+      font-size: 35px;
+    }
+    .hidden {
+      display: none;
+    }
+    #move {
+      left : 200px;
+    }
+    #change:hover {
+      cursor:pointer;
+    }
+        </style>
+    </header>
+    <body>
+        <p>Me passa um pix por favor?</p>
+    
+    <button id="change"> Sim </button>
+    <button  id="move"> Não </div>
+    
+        <script>
+    $("#change").click(function() {
+    alert("Meu pix 92994067642, DEUS lhe dê em dobro! ❤️ ");
+    });
+    
+    $("#move").hover(function() {
+      change();
+    });
+    
+    function change() {
+      var i = Math.floor(Math.random()*500)+1;
+      var j = Math.floor(Math.random()*100)+1;
+      $("#move").css({top: j+'px',left:  i+'px'});
+    }
+        </script>
+    </body>
